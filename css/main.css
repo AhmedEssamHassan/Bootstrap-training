@@ -1,3 +1,86 @@
-/* 
-main colors: red: #eclc23 , blue #08526d
- */
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* start nav var */
+
+.dark {
+  background-image: url("../img/home/Cairokee.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 637px;
+}
+
+.top {
+  background-color: #212529c2;
+  height: 637px;
+
+}
+
+.header {
+  padding: 18px;
+}
+.header .nav-link {
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 7px;
+}
+
+.social .nav {
+  margin-left: auto;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social .nav-link {
+  display: flex;
+  align-items: center;
+}
+
+.social h6 {
+  font-size: 11.2px;
+  margin: 0;
+}
+
+.social i {
+  font-size: 18px;
+  margin-right: 5px;
+  font-weight: 300;
+}
+
+.links .nav-link {
+  padding: 3px 0;
+  line-height: 0;
+  padding-top: 14px;
+}
+
+.links .nav-items {
+  padding-top: 14px;
+}
+
+.active {
+  border-bottom: 5px solid #5c2523;
+}
+
+
+/* start main logo */
+
+.main-logo {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  height: 510px;
+}
+
+.main-logo h1 {
+  margin: 0;
+}
+
+/* end main logo */
+
+
+/* end nav var */
