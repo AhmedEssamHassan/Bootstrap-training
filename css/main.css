@@ -7,7 +7,7 @@ body {
 /* start nav var */
 
 .dark {
-  background-image: url("../img/home/Cairokee.jpg");
+  background-image: url("../img/band/cairokee-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 637px;
@@ -201,6 +201,7 @@ body {
 
 .tour .title p {
   color: rgba(255, 255, 255, 0.6);
+  text-align: center;
 }
 
 .tour .title .sponsor {
@@ -217,8 +218,9 @@ body {
 }
 
 .tour .subscribe {
-  padding-left:0 ;
+  padding-left: 0;
   padding-right: 0;
+  margin-bottom: 50px;
 }
 
 .tour .subscribe,
@@ -251,16 +253,16 @@ p {
 }
 
 .subscribe form .submit {
-  background-color: #EA1C21;
+  background-color: #ea1c21;
   border: none;
   color: white;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 700;
-
 }
 
-.subscribe form .mail{
+.subscribe form .mail {
   border: none;
+  outline: none;
 }
 
 .tour .date-and-time {
@@ -320,3 +322,117 @@ p {
 /* end events */
 
 /* start tour section */
+
+/* start about us section */
+
+.about {
+  margin-bottom: 100px;
+}
+
+.about span {
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.about h2 {
+  color: white;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+/* start personal section */
+
+.about-personal {
+  margin: 0;
+}
+
+.personal-holder {
+  width: 100%;
+  margin: 0;
+}
+
+.personal {
+  height: 300px;
+  background-size: cover;
+  padding: 0;
+}
+
+.personal div {
+  width: 100%;
+  height: 100%;
+  background-color: #11111180;
+  margin: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.personal1 {
+  background-image: url("../img/band/unnamed.jpg");
+  background-position-y: -120px;
+}
+.personal2 {
+  background-image: url("../img/band/a97af0dd41c756ea96638c88a9fd57c4.jpg");
+  background-position-x: -95px;
+}
+.personal3 {
+  background-image: url("../img/band/cVPQkoDI_400x400.jpg");
+}
+.personal4 {
+  background-image: url("../img/band/A-3228939-1429512418-7665.jpeg.jpg");
+}
+
+.about-personal .intro {
+  color: white;
+  padding: 10px 20px 10px 15px;
+  position: relative;
+  top: 220px;
+  transition: ease-in-out .5s;
+}
+
+.about-personal .intro h2 {
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+.about-personal .type {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.about-personal .intro p {
+  font-size: 17px;
+  margin-top: 20px;
+  line-height: 1.4rem;
+  text-transform: capitalize;
+}
+
+/* start intro animation */
+
+.about-personal .personal:hover .intro {
+  animation: smoth-intro 0.5s ;
+  top: 0;
+}
+
+/* end intro animation */
+
+/* start personal section */
+
+/* start mid-cover */
+
+.mid-cover {
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/band/skyler-gerald-EXum9D06dxU-unsplash.jpg");
+  background-position: center;
+  background-repeat:no-repeat;
+}
+
+.mid-cover div {
+  height: 100%;
+  background-color: #111111be;
+}
+
+/* end mid-cover */
+
+/* end about us section */
