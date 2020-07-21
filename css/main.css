@@ -164,12 +164,76 @@ body {
 }
 
 .tour .title p {
-  color: rgba(255, 255, 255, 0.4);
-  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .tour .title .sponsor {
   color: #28a745;
+  text-transform: capitalize;
+  font-size: larger;
 }
 
+            /* start events */
+
+.tour .event {
+  border-top: 1px rgba(255, 255, 255, 0.3) solid;
+  padding: 30px 15px;
+}
+
+.tour .date-and-time {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tour .date-and-time h2 {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.tour .date-and-time p{
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.location {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 20px;
+}
+
+.location h5 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.tour .view-tickets{
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-tickets a {
+  border: 2px white solid;
+  border-radius: 35px;
+  color: white;
+  font-size: 12px;
+  padding: 21px 60px;
+  text-transform: uppercase;
+}
+
+.view-tickets a:hover {
+  text-decoration: none;
+}
+
+            /* end events */
+            
 /* start tour section */
