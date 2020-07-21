@@ -1,5 +1,8 @@
 body {
   font-family: "Josefin Sans", sans-serif;
+  height: 7000px;
+  background-color: #212529;
+
 }
 
 /* start nav var */
@@ -14,7 +17,6 @@ body {
 .top {
   background-color: #212529c2;
   height: 637px;
-
 }
 
 .header {
@@ -36,11 +38,12 @@ body {
 
 .social .nav-link {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .social h6 {
-  font-size: 11.2px;
+  font-size: 12px;
+  font-weight: 700;
   margin: 0;
 }
 
@@ -51,36 +54,122 @@ body {
 }
 
 .links .nav-link {
-  padding: 3px 0;
-  line-height: 0;
+  padding: 0;
   padding-top: 14px;
+  line-height: 0.5rem;
+  margin-right: 40px;
 }
 
 .links .nav-items {
   padding-top: 14px;
+  height: 50px;
 }
 
 .active {
-  border-bottom: 5px solid #5c2523;
+  border-bottom: 7px solid #5c2523;
 }
 
+.links .nav-link:hover {
+  border-bottom: 7px solid #5c2523;
+}
+
+/* end nav var */
 
 /* start main logo */
 
 .main-logo {
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
   height: 510px;
+  position: relative;
 }
 
 .main-logo h1 {
-  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: auto;
+  font-size: 70px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.61);
 }
 
 /* end main logo */
 
+/* start Music platforms */
 
-/* end nav var */
+.platform-section {
+  background-color: #171b1f;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.platforms a {
+  color: white;
+  padding: 47.5px 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  transition: background-color .4s ease-in-out;
+}
+
+.platforms a:hover {
+  text-decoration: none;
+  cursor: pointer
+}
+
+.spotify{
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+.spotify:hover{
+  background-color: #1ED761;
+}
+.itunes:hover{
+  background-color: #EA4CC0;
+}
+.amazon:hover{
+  background-color: #F79C34;
+}
+.google:hover{
+  background-color: #F55A34;
+}
+
+.platforms a {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.platforms a i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* end Music platforms */
+
+/* start tour section */
+
+.tour {
+  margin: 100px 0;
+}
+
+.tour .title {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.tour .title h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.tour .title p {
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: capitalize;
+}
+
+.tour .title .sponsor {
+  color: #28a745;
+}
+
+/* start tour section */
