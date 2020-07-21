@@ -2,7 +2,6 @@ body {
   font-family: "Josefin Sans", sans-serif;
   height: 7000px;
   background-color: #212529;
-
 }
 
 /* start nav var */
@@ -95,6 +94,43 @@ body {
   color: rgba(255, 255, 255, 0.61);
 }
 
+/* start logo animation */
+
+.ml11 {
+  font-weight: 700;
+  font-size: 3.5em;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 {
+  top: 0;
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+/* end logo animation */
+
 /* end main logo */
 
 /* start Music platforms */
@@ -110,28 +146,28 @@ body {
   color: white;
   padding: 47.5px 0;
   border-right: 1px solid rgba(255, 255, 255, 0.3);
-  transition: background-color .4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
 }
 
 .platforms a:hover {
   text-decoration: none;
-  cursor: pointer
+  cursor: pointer;
 }
 
-.spotify{
+.spotify {
   border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
-.spotify:hover{
-  background-color: #1ED761;
+.spotify:hover {
+  background-color: #1ed761;
 }
-.itunes:hover{
-  background-color: #EA4CC0;
+.itunes:hover {
+  background-color: #ea4cc0;
 }
-.amazon:hover{
-  background-color: #F79C34;
+.amazon:hover {
+  background-color: #f79c34;
 }
-.google:hover{
-  background-color: #F55A34;
+.google:hover {
+  background-color: #f55a34;
 }
 
 .platforms a {
@@ -173,11 +209,58 @@ body {
   font-size: larger;
 }
 
-            /* start events */
+/* start events */
 
 .tour .event {
   border-top: 1px rgba(255, 255, 255, 0.3) solid;
   padding: 30px 15px;
+}
+
+.tour .subscribe {
+  padding-left:0 ;
+  padding-right: 0;
+}
+
+.tour .subscribe,
+span {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.tour .subscribe,
+p {
+  text-align: left;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe .sub-mail {
+  width: 90%;
+  height: 90%;
+  border-radius: 035px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.subscribe form {
+  height: 100%;
+  width: 120%;
+  padding: 0;
+}
+
+.subscribe form .submit {
+  background-color: #EA1C21;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+
+}
+
+.subscribe form .mail{
+  border: none;
 }
 
 .tour .date-and-time {
@@ -193,7 +276,7 @@ body {
   font-weight: 900;
 }
 
-.tour .date-and-time p{
+.tour .date-and-time p {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -213,7 +296,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.tour .view-tickets{
+.tour .view-tickets {
   color: white;
   padding: 5px;
   display: flex;
@@ -234,6 +317,6 @@ body {
   text-decoration: none;
 }
 
-            /* end events */
-            
+/* end events */
+
 /* start tour section */
