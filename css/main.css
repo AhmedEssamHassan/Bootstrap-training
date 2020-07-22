@@ -4,6 +4,12 @@ body {
   background-color: #212529;
 }
 
+.darking {
+  background-color:#111111be ;
+  height: 100%;
+}
+
+
 /* start nav var */
 
 .dark {
@@ -329,16 +335,20 @@ p {
   margin-bottom: 100px;
 }
 
-.about span {
+.about span, .news span {
   color: white;
   text-transform: uppercase;
   font-size: 12px;
 }
 
-.about h2 {
+.about h2, .news h2 {
   color: white;
   text-transform: capitalize;
   font-weight: 700;
+}
+
+.about p, .news p {
+  text-align: center;
 }
 
 /* start personal section */
@@ -426,6 +436,7 @@ p {
   background-image: url("../img/band/skyler-gerald-EXum9D06dxU-unsplash.jpg");
   background-position: center;
   background-repeat:no-repeat;
+  margin-bottom: 100px;
 }
 
 .mid-cover div {
@@ -436,3 +447,147 @@ p {
 /* end mid-cover */
 
 /* end about us section */
+
+/* start news-events */
+
+.news p {
+  margin-bottom: 100px;
+}
+
+.news-events {
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.news-events .col {
+  height: 350px;
+  margin: 15px;
+}
+
+.news-events .event {
+  align-items: center;
+  padding: 0;
+  transition: all .3s ease-in-out ;
+}
+
+.news-events .event:hover {
+  transform: translateY(-20px);
+  box-shadow: #111111 0px 0px 70px 15px;
+}
+
+.news-events .event-bg {
+  height: 40%;
+  padding-top: 30px;
+  padding-left: 15px;
+}
+
+.news-events .event-bg:hover {
+  cursor: pointer;
+}
+
+.news-events .event-content {
+  height: 60%;
+  background-color: #222222;
+  padding-top: 25px;
+}
+
+.news-events .bigger {
+  height: 235px;
+  line-height: 1.4rem;
+}
+
+.news-events .event-content a {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  text-align: left;
+  margin-left: 25px;
+}
+
+.news-events .event-content a:hover {
+  text-decoration: none;
+}
+
+.news-events .event-content p {
+padding: 25px 25px 0;
+font-size: 19px;
+text-align: left;
+}
+
+.news-events .event-bg div {
+  width: 45px;
+  height: 70px;
+}
+
+.news-events .event-bg .day {
+  background-color: red;
+  height: 60%;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-events .event-bg .month {
+  height: 40%;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* start events bg in news section  */
+
+.news-events .event1 .event-bg{
+  background-image: url("../img/band/yvette-de-wit-Kcx_YuUR-dw-unsplash.jpg");
+  background-size: cover;
+  background-position-y: -70px;
+}
+.news-events .event2 .event-bg{
+  background-image: url("../img/band/austin-neill-_uzJEiPETvY-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -40px;
+}
+.news-events .event3 .event-bg{
+  background-image: url("../img/band/anna-earl-uu9g3xVBcuM-unsplash.jpg");
+  background-size: cover;
+  background-position-y: -50px;
+}
+
+/* start events bg in news section  */
+
+/* start see more btn */
+
+.see-more {
+  justify-content: center;
+}
+
+.see-more a {
+  height: 50px;
+  padding: 17px 20px 10px;
+  border-radius: 35px;
+  color: white;
+  background-color: #EA1C21;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform:uppercase;
+  justify-content: center;
+  align-items: center;
+  transition: background-color .3s ease-in-out;
+}
+
+.see-more a:hover {
+  text-decoration: none;
+  background-color: #eb366c;
+}
+
+/* start see more btn */
+
+
+/* start news-events */
