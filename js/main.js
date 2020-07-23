@@ -52,9 +52,9 @@ anime.timeline({loop: true})
   }).add({
     targets: '.ml11',
     opacity: 0,
-    duration: 3000,
+    duration: 1000,
     easing: "easeOutExpo",
-    delay: 0
+    delay: 1000
   });
 
 /* end logo animation */

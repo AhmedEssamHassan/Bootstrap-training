@@ -5,10 +5,9 @@ body {
 }
 
 .darking {
-  background-color:#111111be ;
+  background-color: #111111be;
   height: 100%;
 }
-
 
 /* start nav var */
 
@@ -27,7 +26,8 @@ body {
 .header {
   padding: 18px;
 }
-.header .nav-link {
+.header .nav-link,
+footer .nav-link {
   color: white;
   font-size: 12px;
   font-weight: 700;
@@ -335,19 +335,22 @@ p {
   margin-bottom: 100px;
 }
 
-.about span, .news span {
+.about span,
+.news span {
   color: white;
   text-transform: uppercase;
   font-size: 12px;
 }
 
-.about h2, .news h2 {
+.about h2,
+.news h2 {
   color: white;
   text-transform: capitalize;
   font-weight: 700;
 }
 
-.about p, .news p {
+.about p,
+.news p {
   text-align: center;
 }
 
@@ -397,7 +400,7 @@ p {
   padding: 10px 20px 10px 15px;
   position: relative;
   top: 220px;
-  transition: ease-in-out .5s;
+  transition: ease-in-out 0.5s;
 }
 
 .about-personal .intro h2 {
@@ -420,7 +423,7 @@ p {
 /* start intro animation */
 
 .about-personal .personal:hover .intro {
-  animation: smoth-intro 0.5s ;
+  animation: smoth-intro 0.5s;
   top: 0;
 }
 
@@ -435,7 +438,7 @@ p {
   height: 500px;
   background-image: url("../img/band/skyler-gerald-EXum9D06dxU-unsplash.jpg");
   background-position: center;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   margin-bottom: 100px;
 }
 
@@ -468,7 +471,7 @@ p {
 .news-events .event {
   align-items: center;
   padding: 0;
-  transition: all .3s ease-in-out ;
+  transition: all 0.3s ease-in-out;
 }
 
 .news-events .event:hover {
@@ -490,6 +493,8 @@ p {
   height: 60%;
   background-color: #222222;
   padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .news-events .bigger {
@@ -499,11 +504,10 @@ p {
 
 .news-events .event-content a {
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   color: white;
   text-align: left;
-  margin-left: 25px;
 }
 
 .news-events .event-content a:hover {
@@ -511,9 +515,8 @@ p {
 }
 
 .news-events .event-content p {
-padding: 25px 25px 0;
-font-size: 19px;
-text-align: left;
+  font-size: 16px;
+  text-align: left;
 }
 
 .news-events .event-bg div {
@@ -543,18 +546,18 @@ text-align: left;
 
 /* start events bg in news section  */
 
-.news-events .event1 .event-bg{
+.news-events .event1 .event-bg {
   background-image: url("../img/band/yvette-de-wit-Kcx_YuUR-dw-unsplash.jpg");
   background-size: cover;
   background-position-y: -70px;
 }
-.news-events .event2 .event-bg{
+.news-events .event2 .event-bg {
   background-image: url("../img/band/austin-neill-_uzJEiPETvY-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -40px;
 }
-.news-events .event3 .event-bg{
+.news-events .event3 .event-bg {
   background-image: url("../img/band/anna-earl-uu9g3xVBcuM-unsplash.jpg");
   background-size: cover;
   background-position-y: -50px;
@@ -573,13 +576,13 @@ text-align: left;
   padding: 17px 20px 10px;
   border-radius: 35px;
   color: white;
-  background-color: #EA1C21;
+  background-color: #ea1c21;
   font-size: 15px;
   font-weight: 700;
-  text-transform:uppercase;
+  text-transform: uppercase;
   justify-content: center;
   align-items: center;
-  transition: background-color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .see-more a:hover {
@@ -587,7 +590,72 @@ text-align: left;
   background-color: #eb366c;
 }
 
-/* start see more btn */
+/* end see more btn */
 
+/* start footer */
 
-/* start news-events */
+footer {
+  margin-top: 50px;
+}
+
+/* start nav-bottom */
+
+footer .first {
+  background-color: #171b1f;
+  height: 175px;
+  padding: 50px 50px;
+}
+
+footer .links {
+  padding-top: 15px;
+  padding-left: 195px;
+  padding-right: 0;
+  margin: 0;
+}
+
+footer .active {
+  border: none;
+}
+
+/* for bottom logo animation */
+
+.ml11 {
+  font-weight: 700;
+  font-size: 3.5em;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 {
+  top: 0;
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+  color: white;
+  font-size: 30px;
+}
+
+/* for bottom logo animation */
+
+/* end nav-bottom */
+
+/* end footer */
