@@ -1,6 +1,5 @@
 body {
   font-family: "Josefin Sans", sans-serif;
-  height: 7000px;
   background-color: #212529;
 }
 
@@ -661,7 +660,7 @@ footer .active {
 /* start contact section */
 
 footer form {
-  background-color: #171b1f
+  background-color: #171b1f;
   margin-top: 70px;
 }
 
@@ -679,8 +678,70 @@ textarea {
   margin: 30px 0;
 }
 
+footer .btn {
+  font-size: 12px;
+  display: flex;
+  padding-left: 0;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+footer button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ea1c21;
+  color: white;
+  font-weight: 700;
+}
+
+
 /* end contact section */
 
+/* start sec footer */
+
+.sec-footer {
+  background-color: #121619;
+  height: 175px;
+  display: flex;
+  flex-direction: row;
+}
+
+.sec-footer p {
+  margin: auto;
+  margin-left: 25px;
+}
+
+.sec-footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-right: 25px;
+}
+
+.sec-footer ul li a{
+  margin: 15px;
+  display: flex;  
+  flex-direction: row;
+  color: white;
+  align-items: flex-start;
+}
+
+.sec-footer ul li h6 {
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.sec-footer ul li i {
+  margin-right: 10px;
+  font-size: 19px;
+  position: relative;
+  bottom: 4px;
+}
+
+/* end sec footer */
 
 /* end nav-bottom */
 
