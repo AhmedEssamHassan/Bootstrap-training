@@ -131,6 +131,28 @@ window.addEventListener("scroll", () => {
 
 /* end navbar animation */
 
+/* start loading layout */
+
+/* const body = document.querySelector("body");
+
+const loading = document.createElement("div");
+loading.innerHTML = `<div class="spinner"></div>`;
+
+body.appendChild(loading);
+
+loading.style.backgroundColor = "#222222";
+loading.style.position = "absolute";
+loading.style.left = "0";
+loading.style.top = "0";
+loading.style.width = "100%";
+loading.style.height = "100%";
+loading.style.zIndex = "99999";
+loading.style.animation = "loading-duration 2s ease 3s"
+  
+body.style.animation = "for-body 2s ease 3s" */
+
+/* end loading layout */
+
 /* events animation */
 
 const eventHolders = document.querySelectorAll(".event-holder");
@@ -142,12 +164,6 @@ const l1 = document.querySelectorAll(".l1");
 const l2 = document.querySelectorAll(".l2");
 
 const tickets = document.querySelectorAll(".tickets");
-
-
-/* for (let x = 0; x <= eventHolders.length; x++) {
- 
-} */
-
 
 
 for (let x = 0; x <= eventHolders.length; x++) {
@@ -202,3 +218,4 @@ for (let x = 0; x <= eventHolders.length; x++) {
 
 
 /* events animation */
+
