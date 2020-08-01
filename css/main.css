@@ -1,14 +1,15 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   background-color: #212529;
+  overflow: hidden;
+  height: 100%;
+  animation: body 35s ease-in-out forwards;
 }
 
-@keyframes for-body {
-  from {
-    overflow: hidden;
-  }
+@keyframes body {
   to {
-    overflow: auto;
+    overflow: visible;
+    height: auto;
   }
 }
 
@@ -35,7 +36,7 @@ body {
   padding-top: 25px;
   z-index: 2;
   background-color: #11111100;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .scrolled {
@@ -48,8 +49,6 @@ body {
 .gray {
   background-color: gray;
 }
-
-
 
 .header .nav-link,
 footer .nav-link {
@@ -917,54 +916,105 @@ footer button {
 
 /* start loading overlay */
 
-.loading{
-    
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  /* animation: hide 5s ease-in-out forwards;            <<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
- /* start loadin duration */
-
- @keyframes loading-duration {
-   from {
-     top: 0;
-     display: block;
-   }
-   to {
-     top: -900px;
-     display: none;
-   }
- }
-
- /* end loadin duration */
- 
-.spinner {
-  
-  width: 40px;
-  height: 40px;
-  background-color: #333;
-
-  margin: 100px auto;
-  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
-  animation: sk-rotateplane 1.2s infinite ease-in-out;
-}
-
-@-webkit-keyframes sk-rotateplane {
-  0% { -webkit-transform: perspective(120px) }
-  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
-  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
-}
-
-@keyframes sk-rotateplane {
-  0% { 
-    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
-  } 50% { 
-    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
-  } 100% { 
-    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+@keyframes hide {
+  to {
+    opacity: 0;
+    display: none;
   }
 }
 
-/* enf loading overlay */
+.for-cairokee {
+  margin-top: 10%;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  text-align: center;
+  padding-bottom: 5px;
+  position: absolute;
+}
+
+.for-cairokee span {
+  color: red;
+  text-transform: capitalize;
+  font-size: 60px;
+  margin: 0;
+  position: relative;
+}
+
+.hider {
+  display: flex;
+  background-color: #000;
+  width: 264px;
+  height: 64px;
+  position: absolute;
+  top: -12%;
+  left: 0%;
+  animation: temptation 5s ease-in-out forwards;
+}
+
+@keyframes temptation {
+  20% {
+    left: 5%;
+  }
+  30% {
+    left: 0%;
+  }
+  40% {
+    left: 40%;
+  }
+  60% {
+    left: 25%;
+  }
+  70% {
+    left: 60%;
+  }
+  80% {
+    left: 50%;
+  }
+  90% {
+    left: 90%;
+  }
+  95% {
+    left: 40%;
+  }
+  100% {
+    left: 101%;
+  }
+}
+
+.dots {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: space-around;
+  background-color: rgb(105, 216, 71);
+  position: absolute;
+  bottom: 0%;
+}
+
+@keyframes dots-animation {
+  from {
+  }
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+/* end loading overlay */
