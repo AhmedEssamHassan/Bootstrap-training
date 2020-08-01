@@ -32,9 +32,25 @@ body {
 }
 
 .header {
-  padding: 18px;
+  padding-top: 25px;
   z-index: 2;
+  background-color: #11111100;
+  transition: .3s ease-in-out;
 }
+
+.scrolled {
+  position: fixed;
+  width: 100%;
+  background-color: #212529;
+  padding: 10px;
+}
+
+.gray {
+  background-color: gray;
+}
+
+
+
 .header .nav-link,
 footer .nav-link {
   color: white;
@@ -480,6 +496,10 @@ p {
 
 .about {
   margin-bottom: 100px;
+}
+
+footer .contact {
+  padding-top: 50px;
 }
 
 .about span,

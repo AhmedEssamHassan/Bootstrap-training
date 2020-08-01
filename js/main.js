@@ -11,16 +11,56 @@ for (let x = 0; x < allLinks.length; x++) {
   }
 }
 
-for (let e of otherLinks) {
-  e.addEventListener("mouseenter", () => {
-    active.style.border = "none";
-  });
-}
-for (let e of otherLinks) {
-  e.addEventListener("mouseleave", () => {
-    active.style.borderBottom = "7px solid #5c2523";
-  });
-}
+/* start navbar animation */
+
+const header = document.querySelector(".header");
+const mainLogo = document.querySelector(".main-logo");
+
+const offsetTop = mainLogo.offsetTop;
+
+window.addEventListener("scroll", () => {
+  console.log(window.scrollY);
+  if (window.scrollY > header.style.height) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+
+/* navbar borders while scrolling */
+console.log(window.scrollY);
+const links = document.querySelectorAll(".nav-link");
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 0 && window.scrollY < 862) {
+    links[0].classList.add("active");
+  } else {
+    links[0].classList.remove("active");
+  }
+  if (window.scrollY >= 863 && window.scrollY < 1855) {
+    links[1].classList.add("active");
+  } else {
+    links[1].classList.remove("active");
+  }
+  if (window.scrollY >= 1855 && window.scrollY < 3237) {
+    links[2].classList.add("active");
+  } else {
+    links[2].classList.remove("active");
+  }
+  if (window.scrollY >= 3237 && window.scrollY < 4125) {
+    links[3].classList.add("active");
+  } else {
+    links[3].classList.remove("active");
+  }
+  if (window.scrollY >= 4125 && window.scrollY < 4447) {
+    links[4].classList.add("active");
+  } else {
+    links[4].classList.remove("active");
+  }
+});
+
+/* navbar borders while scrolling */
+
+/* end navbar animation */
 
 /* start logo animation */
 
@@ -116,21 +156,6 @@ anime
 
 /* end logo animation */
 
-/* start navbar animation */
-
-const header = document.querySelector(".header");
-const mainLogo = document.querySelector(".main-logo");
-
-const offsetTop = mainLogo.offsetTop;
-
-window.addEventListener("scroll", () => {
-  header.style.position = "fixed";
-  header.style.width = "100%";
-  header.style.backgroundColor = "#212529";
-});
-
-/* end navbar animation */
-
 /* start loading layout */
 
 /* const body = document.querySelector("body");
@@ -165,17 +190,15 @@ const l2 = document.querySelectorAll(".l2");
 
 const tickets = document.querySelectorAll(".tickets");
 
-
 for (let x = 0; x <= eventHolders.length; x++) {
   eventHolders[x].addEventListener("mouseenter", () => {
+    times[x].style.animation = "small-colors .3s";
+    l1[x].style.animation = "small-colors .3s";
+    l2[x].style.animation = "small-colors .3s";
+    dates[x].style.animation = "date-colors .3s";
+    tickets[x].style.animation = "date-colors .3s";
+    tickets[x].style.animation = "t-border .3s";
 
-    times[x].style.animation = "small-colors .3s"
-    l1[x].style.animation = "small-colors .3s"
-    l2[x].style.animation = "small-colors .3s"
-    dates[x].style.animation = "date-colors .3s"
-    tickets[x].style.animation = "date-colors .3s"
-    tickets[x].style.animation = "t-border .3s"
-    
     events[x].style.animation = "translate .3s ease-in-out none 1";
     events[x].style.backgroundColor = "white";
 
@@ -186,23 +209,18 @@ for (let x = 0; x <= eventHolders.length; x++) {
     tickets[x].style.color = "#212529";
     tickets[x].style.border = "2px #212529 solid";
     tickets[x].style.borderRadius = "35px";
-    
   });
 
-
-
   eventHolders[x].addEventListener("mouseleave", () => {
+    times[x].style.animation = "leave-small-colors .3s";
+    l1[x].style.animation = "leave-small-colors .3s";
+    l2[x].style.animation = "leave-small-colors .3s";
 
-    times[x].style.animation = "leave-small-colors .3s"
-    l1[x].style.animation = "leave-small-colors .3s"
-    l2[x].style.animation = "leave-small-colors .3s"
-    
-    dates[x].style.animation = "leave-date-colors .3s"
+    dates[x].style.animation = "leave-date-colors .3s";
 
-    tickets[x].style.animation = "leave-date-colors .3s"
-    tickets[x].style.animation = "leave-t-border .3s"
+    tickets[x].style.animation = "leave-date-colors .3s";
+    tickets[x].style.animation = "leave-t-border .3s";
 
-    
     events[x].style.animation = "leave-translate .3s ease-in-out none 1";
     events[x].style.backgroundColor = "#212529";
     dates[x].style.color = "white";
@@ -212,10 +230,7 @@ for (let x = 0; x <= eventHolders.length; x++) {
     tickets[x].style.color = "white";
     tickets[x].style.border = "2px white solid";
     tickets[x].style.borderRadius = "35px";
-    
   });
 }
 
-
 /* events animation */
-
