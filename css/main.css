@@ -3,12 +3,18 @@ body {
   background-color: #212529;
   overflow: hidden;
   height: 100%;
-  animation: body 20s ease-in-out forwards;
+  animation: body 6s ease-in-out forwards;
 }
 
 @keyframes body {
-  to {
-    overflow: visible;
+  1% {
+    overflow: hidden;
+  }
+  99% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: auto;
     height: auto;
   }
 }
@@ -34,16 +40,18 @@ body {
 
 .header {
   padding-top: 25px;
-  z-index: 2;
   background-color: #11111100;
   transition: 0.3s ease-in-out;
 }
+
+
 
 .scrolled {
   position: fixed;
   width: 100%;
   background-color: #212529;
   padding: 10px;
+  z-index: 5;
 }
 
 .gray {
@@ -918,15 +926,12 @@ footer button {
 
 .loading {
   position: absolute;
-  top: 0;
+  top: 0; 
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgb(0, 0, 0);
-  animation: hide 10s ease-in-out forwards;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  animation: hide 6s ease-out forwards;
 }
 
 @keyframes hide {
@@ -938,7 +943,6 @@ footer button {
   }
   100% {
     opacity: 0;
-    display: none;
   }
 }
 
@@ -1008,6 +1012,8 @@ footer button {
 
   position: relative;
 }
+
+
 
 .dot {
   width: 20px;

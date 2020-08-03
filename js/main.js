@@ -156,27 +156,14 @@ anime
 
 /* end logo animation */
 
-/* start loading layout */
+/* start loading overlay */
 
-/* const body = document.querySelector("body");
+setTimeout(function(){
+  $('.loading').remove();
+}, 6000);
 
-const loading = document.createElement("div");
-loading.innerHTML = `<div class="spinner"></div>`;
 
-body.appendChild(loading);
-
-loading.style.backgroundColor = "#222222";
-loading.style.position = "absolute";
-loading.style.left = "0";
-loading.style.top = "0";
-loading.style.width = "100%";
-loading.style.height = "100%";
-loading.style.zIndex = "99999";
-loading.style.animation = "loading-duration 2s ease 3s"
-  
-body.style.animation = "for-body 2s ease 3s" */
-
-/* end loading layout */
+/* end loading overlay */
 
 /* events animation */
 
